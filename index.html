@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Company Logo Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- THEME TOGGLE -->
+  <button class="theme-toggle" onclick="toggleTheme()">🌙 / ☀️</button>
+
+  <!-- LANDING PAGE -->
+  <div class="container" id="landing">
+    <h1>👋 Welcome!</h1>
+    <p>Welcome to the Company Logo Identification Quiz</p>
+    <input type="text" id="username" placeholder="Enter your name">
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <!-- QUIZ PAGE -->
+  <div class="container hidden" id="quiz">
+    <h1>🧠 Company Logo Identification Quiz</h1>
+
+    <div id="quiz-box">
+      <p id="progress"></p>
+      <p id="question"></p>
+      <div id="options"></div>
+    </div>
+
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

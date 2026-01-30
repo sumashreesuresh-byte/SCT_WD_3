@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  transition: 0.3s;
+}
+
+body.dark {
+  background: #111827;
+  color: #f9fafb;
+}
+
+.container {
+  background: white;
+  width: 520px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+body.dark .container {
+  background: #1f2937;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#progress {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+body.dark #progress {
+  color: #cbd5f5;
+}
+
+#question {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.option {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.option.selected {
+  background: #dbeafe;
+  border-color: #2563eb;
+}
+
+body.dark .option {
+  border-color: #555;
+}
+
+body.dark .option.selected {
+  background: #374151;
+  border-color: #60a5fa;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: auto;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* RESULT PAGE */
+.result-container {
+  background: white;
+  color: #090909;
+  width: 650px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.score-card {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: #eff6ff;
+  color: #090909;
+  border: 1px solid #bfdbfe;
+  margin-bottom: 25px;
+}
+
+.result-item {
+  border-left: 5px solid;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  background: #f9fafb;
+}
+
+.result-item.correct {
+  border-color: #16a34a;
+}
+
+.result-item.wrong {
+  border-color: #dc2626;
+}
+
+#leaderboard li {
+  font-weight: bold;
+  margin: 6px 0;
+}
