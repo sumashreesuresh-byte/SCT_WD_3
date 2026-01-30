@@ -11,7 +11,6 @@ Progress Indicator - Displays current question number (Qx / Total)
 Answer Validation - Case-insensitive checking for fill-in-the-blank questions
 Score Calculation - Calculates total score at the end of the quiz
 Detailed Results Page - Shows each question with user's answer and correct answer
-Error Handling - Prevents moving forward without selecting or entering an answer
 
 🛠️ Technologies Used
 HTML5
